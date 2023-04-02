@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "BEBDF6D29F1E2976949D488470AAE310",
+  "keywordClasses": [
+    {
+      "name": "getElementPosition.elementPosition",
+      "keywordMethods": [
+        {
+          "name": "getElementPosition",
+          "parameters": [
+            {
+              "name": "testObject",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "CFBE57C67FFE8AAF66013B6900574BD9",
+  "keywordClasses": [
+    {
+      "name": "klkj.account",
+      "keywordMethods": [
+        {
+          "name": "acc",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

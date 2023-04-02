@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "00CB17DEBD217C662E5D15C30D7CA5E5",
+  "keywordClasses": [
+    {
+      "name": "salesforce.SelectSalesforceType",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC117</description>
+   <name>TC_VerifyErrorMessage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ddd75b3e-9680-4396-8834-e13a92815313</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>82f597dc-35bb-4682-b271-5622f51e5443</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/OpportunityCreate/Messages</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>82f597dc-35bb-4682-b271-5622f51e5443</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Message</value>
+      <variableId>aba9e1f8-7bc9-42b6-a81b-d31680e3f7c4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aba9e1f8-7bc9-42b6-a81b-d31680e3f7c4</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variable>
+</TestCaseEntity>

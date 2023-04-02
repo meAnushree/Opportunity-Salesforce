@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AccountPageSteps</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5058c0f6-b71f-437f-a45b-3bf069bf7f01</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>8616f4bf-3f24-48f9-93b1-507538b0741e</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/SFDC/Profiles</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>8616f4bf-3f24-48f9-93b1-507538b0741e</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Search Account Name</value>
+      <variableId>29c9b0f0-d3e6-4c26-b73c-cb3ee9327df5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>29c9b0f0-d3e6-4c26-b73c-cb3ee9327df5</id>
+      <masked>false</masked>
+      <name>searchAccountName</name>
+   </variable>
+</TestCaseEntity>

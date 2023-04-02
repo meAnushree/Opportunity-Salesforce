@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Impersonation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4742f59c-8e20-4c0a-abc9-1b69bfa2e5f4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7feb5b78-d54f-46fb-a856-ece6c2d7b1e4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Puchta, Evelyn'</defaultValue>
+      <description></description>
+      <id>7feb5b78-d54f-46fb-a856-ece6c2d7b1e4</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+</TestCaseEntity>

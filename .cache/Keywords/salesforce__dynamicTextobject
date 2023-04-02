@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "E149BEFB9285A9C304A19C7C0D4BDFB8",
+  "keywordClasses": [
+    {
+      "name": "salesforce.dynamicTextobject",
+      "keywordMethods": [
+        {
+          "name": "testDynamicobj",
+          "parameters": [
+            {
+              "name": "xpath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
