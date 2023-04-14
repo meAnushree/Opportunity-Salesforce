@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "6A5526139D758E1BE0336C43D5264116",
+  "keywordClasses": [
+    {
+      "name": "checkFieldIsRequired.verifyField",
+      "keywordMethods": [
+        {
+          "name": "verify",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

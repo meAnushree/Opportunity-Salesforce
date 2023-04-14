@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -19,54 +18,75 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Click on "+" icon'
-WebUI.click(findTestObject('OpportunityPage/AccountPageSteps/AllTab'))
+WebUI.click(findTestObject('Sales/Accounts/AccountPageSteps/AllTab'))
 
-WebUI.click(findTestObject('OpportunityPage/Steps/Opportunities'))
+WebUI.click(findTestObject('Sales/Common/Steps/Opportunities'))
 
-WebUI.click(findTestObject('OpportunityPage/Steps/NewButton'))
+WebUI.click(findTestObject('Sales/Common/Steps/NewButton'))
 
-WebUI.click(findTestObject('OpportunityPage/Steps/ContinueBtn'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/RecordType', [('type') : RecordType]))
 
-WebUI.click(findTestObject('OpportunityPage/NewOpportunityCreation/AccountName'))
+WebUI.click(findTestObject('Sales/Common/Steps/ContinueBtn'))
 
-'Get the index of the present window'
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AccountName'))
+
 int window = WebUI.getWindowIndex()
 
 'Switch the window '
 WebUI.switchToWindowIndex(window + 1)
 
 'Add text to search a country name in a popup window'
-WebUI.setText(findTestObject('OpportunityPage/NewOpportunityCreation/lookup'), accountName)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Lookup'), AccountName)
 
-WebUI.click(findTestObject('OpportunityPage/NewOpportunityCreation/GoButton'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/GoButton'))
 
 'Select a country name from popup window'
-WebUI.click(findTestObject('OpportunityPage/NewOpportunityCreation/LookupResult'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/LookupResult'))
 
 WebUI.switchToWindowIndex(window)
 
-WebUI.setText(findTestObject('OpportunityPage/NewOpportunityCreation/TCV(USD)'), tcv)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ExpectedCloseQuarter'), ECQ)
 
-WebUI.setText(findTestObject('OpportunityPage/NewOpportunityCreation/Term(Month)'), term)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Probability'), Probability, false)
 
-WebUI.setText(findTestObject('OpportunityPage/NewOpportunityCreation/ProposedDiscount'), proposedDiscount)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/TCV(USD)'), TCV)
 
-WebUI.setText(findTestObject('OpportunityPage/NewOpportunityCreation/DefaultDiscount'), defaultDiscount)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Term(Month)'), TermMonth)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/NewOpportunityCreation/LineLevelDiscount'), lineLevelDiscount, false )
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ProposedDiscount'), ProposedDiscount)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/NewOpportunityCreation/Region'), region ,false)
+not_run: WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/DefaultDiscount'), DefaultDiscount)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/NewOpportunityCreation/TransactionType'), transactionType ,false)
+not_run: WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/LineLevelDiscount'), LineLevelDiscount, 
+    false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/NewOpportunityCreation/DealReview'), dealReview ,false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Region'), Region, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/NewOpportunityCreation/MEU'), meu, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/TransactionType'), TransactionType, false)
 
-WebUI.click(findTestObject('OpportunityPage/NewOpportunityCreation/SaveBtn'))
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/DealReview'), DealReview, false)
+
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/MEU'), MEU, false)
+
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Foundry'), Foundry, false)
+
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Process'), Proces, false)
+
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/Competitor'), Competitor, false)
+
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddCompetitorBtn'))
+
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/IPProductCategory'), IPProductCategory,
+	false)
+
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddIPProductBtn'))
+
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/CompellingEventIP'), CompellingEventIP, false)
+
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/SaveBtn'))
 
 WebUI.delay(GlobalVariable.shortDelay)
 
 'Verify that after entering all the required field values, page will save without any error'
-WebUI.verifyElementVisible(findTestObject('OpportunityPage/NewOpportunityCreation/SavePage'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Sales/Opportunity/CreateOpportunity/SavePage'), FailureHandling.STOP_ON_FAILURE)
 

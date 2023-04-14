@@ -20,27 +20,27 @@ import org.openqa.selenium.WebElement as WebElement
 
 not_run: WebUI.click(findTestObject('null', [('Value') : ExOppty]))
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/Edit'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/Edit'))
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Probability'), probability, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Probability'), probability, false)
 
 if (objectType == 'Opportunities') {
 	'Add text in term months field in opportunity edit page'
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/TermMonths'), termMonths)
+	WebUI.setText(findTestObject('null'), termMonths)
 
 	'Add text in proposed discount field in opportunity edit page'
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ProposedDiscount'), proposedDiscount)
+	WebUI.setText(findTestObject('null'), proposedDiscount)
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Region'), region, false)
+	WebUI.selectOptionByValue(findTestObject('null'), region, false)
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/TransactionType'), transactionType, false)
+	WebUI.selectOptionByValue(findTestObject('null'), transactionType, false)
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/DealReviewType'), dealReviewType, false)
+	WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/DealReviewType'), dealReviewType, false)
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/PotentialMeur'), potentialMeur, false)
+	WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/PotentialMeur'), potentialMeur, false)
 
 	if (transactionType == 'IP - Tensilica') {
-		TestObject testObj3 = findTestObject('Object Repository/OpportunityPage/CreateOpportunity/IPTensilicaProductCategory')
+		TestObject testObj3 = findTestObject('Object Repository/Sales/Opportunity/CreateOpportunity/IPTensilicaProductCategory')
 
 		List<WebElement> elementsc = WebUI.findWebElements(testObj3, 10)
 
@@ -50,22 +50,22 @@ if (objectType == 'Opportunities') {
 
 		WebUI.delay(2)
 
-		WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddIPTensilicaProductBtn'))
+		WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddIPTensilicaProductBtn'))
 	}
 } else if (objectType == 'Accounts') {
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/TcvUsd'), tcvUsd)
+	WebUI.setText(findTestObject('null'), tcvUsd)
 
 	if (recordType == 'SW & HW & Serv') {
-		WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/SoftwareTcvUsd'), softwareTCV)
+		WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/SoftwareTcvUsd'), softwareTCV)
 
-		WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ServicesTcvUsd'), serviceTCV)
+		WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ServicesTcvUsd'), serviceTCV)
 	}
 }
 
 if ((probability >= '30%') || '65%') {
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/DealStartDate'), DealStartDate)
+	WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/DealStartDate'), DealStartDate)
 
-	TestObject testObj = findTestObject('OpportunityPage/compellingEvent')
+	TestObject testObj = findTestObject('Opportunity/compellingEvent')
 
 	List<WebElement> elements = WebUI.findWebElements(testObj, 10)
 
@@ -73,19 +73,19 @@ if ((probability >= '30%') || '65%') {
 
 	elements.get(1).click()
 
-	WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddCompellingEvent'))
+	WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddCompellingEvent'))
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/BillingPlan'), billingPlan, false)
+	WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/BillingPlan'), billingPlan, false)
 
-	WebUI.setText(findTestObject('OpportunityPage/SystemTCV'), SystemTcv)
+	WebUI.setText(findTestObject('Opportunity/SystemTCV'), SystemTcv)
 
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ComittedSystemTcv'), comittedSystemTCV)
+	WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CommittedSystemTcv'), comittedSystemTCV)
 
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/CfdTcv'), CfdTcv)
+	WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CfdTcv'), CfdTcv)
 
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/CommittedCfdTcv'), committedCfdTcv)
+	WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CommittedCfdTcv'), committedCfdTcv)
 
-	TestObject testObja = findTestObject('OpportunityPage/CreateOpportunity/RiskIssue')
+	TestObject testObja = findTestObject('Sales/Opportunity/CreateOpportunity/RiskIssue')
 
 	List<WebElement> elementse = WebUI.findWebElements(testObja, 10)
 
@@ -93,25 +93,25 @@ if ((probability >= '30%') || '65%') {
 
 	elementse.get(1).click()
 
-	WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddRiskIssueBtn'))
+	WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddRiskIssueBtn'))
 
-	WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/PotentialMEA'), potentialMea, false)
+	WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/PotentialMEA'), potentialMea, false)
 }
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/Save'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/Save'))
 
 WebUI.delay(GlobalVariable.mediumDelay)
 
 if (objectType == 'Opportunities') {
-	cs = WebUI.getText(findTestObject('OpportunityPage/OpportunityCreditStatus/CreditStatus'))
+	cs = WebUI.getText(findTestObject('Sales/Opportunity/OpportunityCreditStatus/CreditStatus'))
 
 	WebUI.verifyEqual(cs, creditStatus)
 } else if (objectType == 'Accounts') {
-	cs = WebUI.getText(findTestObject('OpportunityPage/OpportunityCreditStatus/CreditStatus'))
+	cs = WebUI.getText(findTestObject('Sales/Opportunity/OpportunityCreditStatus/CreditStatus'))
 
 	WebUI.verifyEqual(cs, creditStatus)
 
-	rrr = WebUI.getText(findTestObject('OpportunityPage/CreateOpportunity/RecRiskRating'))
+	rrr = WebUI.getText(findTestObject('Sales/Opportunity/CreateOpportunity/RecRiskRating'))
 
 	WebUI.verifyEqual(rrr, recRiskRating)
 }

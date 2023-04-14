@@ -9,6 +9,12 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>fe1daafc-dc2e-4b0b-88e9-834df6ce8b15</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>9508ee3e-e1fa-4f2e-88fe-b9714df59178</variableId>
    </variableLinks>
    <variableLinks>
@@ -65,74 +71,120 @@
       <value></value>
       <variableId>5f853fe9-cc0e-4400-a3ef-bbf9cf6e6367</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3c6c1117-28c9-41f0-9ab5-1b198c6192d2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b7b9eeb8-aa73-4ef0-b4b9-827d0ec70447</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94080da6-14ef-4956-825a-c28c05eb78d5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fe1daafc-dc2e-4b0b-88e9-834df6ce8b15</id>
+      <masked>false</masked>
+      <name>RecordType</name>
+   </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>9508ee3e-e1fa-4f2e-88fe-b9714df59178</id>
       <masked>false</masked>
-      <name>accountName</name>
+      <name>AccountName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>cd55558b-056b-48b2-a68b-9835743cb9ef</id>
       <masked>false</masked>
-      <name>tcv</name>
+      <name>TCV</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>fdf2ddff-b770-4928-90c2-cc4bab98d47f</id>
       <masked>false</masked>
-      <name>term</name>
+      <name>TermMonth</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>6bbaef32-ff43-43ef-93b5-9fd64261be82</id>
       <masked>false</masked>
-      <name>proposedDiscount</name>
+      <name>ProposedDiscount</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>af1cb002-54ba-4815-914e-d5834a0e6365</id>
       <masked>false</masked>
-      <name>defaultDiscount</name>
+      <name>DefaultDiscount</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>0ebac3a2-d118-4529-9bcd-b78145ae72c8</id>
       <masked>false</masked>
-      <name>lineLevelDiscount</name>
+      <name>LineLevelDiscount</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>d4c171de-484e-4ec3-8301-045109fd93e6</id>
       <masked>false</masked>
-      <name>region</name>
+      <name>Region</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>c6a85c3b-b25c-4b11-a29d-5119edff6d4b</id>
       <masked>false</masked>
-      <name>transactionType</name>
+      <name>TransactionType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>a3f18402-0161-4870-9aa2-9712c663aa39</id>
       <masked>false</masked>
-      <name>dealReview</name>
+      <name>DealReview</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>5f853fe9-cc0e-4400-a3ef-bbf9cf6e6367</id>
       <masked>false</masked>
-      <name>meu</name>
+      <name>MEU</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3c6c1117-28c9-41f0-9ab5-1b198c6192d2</id>
+      <masked>false</masked>
+      <name>ECQ</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b7b9eeb8-aa73-4ef0-b4b9-827d0ec70447</id>
+      <masked>false</masked>
+      <name>Probability</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>94080da6-14ef-4956-825a-c28c05eb78d5</id>
+      <masked>false</masked>
+      <name>Foundry</name>
    </variable>
 </TestCaseEntity>

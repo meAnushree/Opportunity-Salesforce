@@ -18,38 +18,38 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Scroll to `New Booking Package` button'
-WebUI.scrollToElement(findTestObject('OpportunityPage/EditOpportunityPage/BookingPackageBtn'), GlobalVariable.shortDelay)
+WebUI.scrollToElement(findTestObject('Sales/Opportunity/EditOpportunityPage/BookingPackageBtn'), GlobalVariable.shortDelay)
 
-WebUI.click(findTestObject('OpportunityPage/EditOpportunityPage/BookingPackageBtn'))
+WebUI.click(findTestObject('Sales/Opportunity/EditOpportunityPage/BookingPackageBtn'))
 
-WebUI.click(findTestObject('OpportunityPage/Steps/ContinueBtn'))
+WebUI.click(findTestObject('Sales/Common/Steps/ContinueBtn'))
 
 WebUI.delay(GlobalVariable.shortDelay)
 
 'Create new booking package'
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/FlowType'), flowType, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/FlowType'), flowType, false)
 
-WebUI.setText(findTestObject('OpportunityPage/EditOpportunityPage/ActualCloseQuarter'), actualCloseQuarter)
+WebUI.setText(findTestObject('Sales/Opportunity/EditOpportunityPage/ActualCloseQuarter'), actualCloseQuarter)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/ActualTransactionType'), actualTransactionType, 
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/ActualTransactionType'), actualTransactionType, 
     false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/VAR'), var, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/VAR'), var, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/Currency'), currency, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/Currency'), currency, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/Ts-Cs'), tsCs, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/Ts-Cs'), tsCs, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/EditOpportunityPage/Status'), status, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/EditOpportunityPage/Status'), status, false)
 
-WebUI.setText(findTestObject('OpportunityPage/EditOpportunityPage/AddSAP'), sap)
+WebUI.setText(findTestObject('Sales/Opportunity/EditOpportunityPage/AddSAP'), sap)
 
-WebUI.setText(findTestObject('OpportunityPage/EditOpportunityPage/AddBookedDate'), bookedDate)
+WebUI.setText(findTestObject('Sales/Opportunity/EditOpportunityPage/AddBookedDate'), bookedDate)
 
-WebUI.click(findTestObject('OpportunityPage/EditOpportunityPage/SaveBtn'))
+WebUI.click(findTestObject('Sales/Opportunity/EditOpportunityPage/SaveBtn'))
 
 'Verify that new booking package is created'
-String bookingPackageName = WebUI.getText(findTestObject('OpportunityPage/EditOpportunityPage/BookingPackageName'))
+String bookingPackageName = WebUI.getText(findTestObject('Sales/Opportunity/EditOpportunityPage/BookingPackageName'))
 
 WebUI.verifyTextPresent(bookingPackageName, false)
 

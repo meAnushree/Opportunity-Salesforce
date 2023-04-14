@@ -7,193 +7,401 @@
    <testCaseGuid>461755aa-e6bb-4868-9cd4-b7fd66b46c63</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>01d549f4-2066-4700-bdae-b1ce1359056d</id>
+      <id>eff72ec8-a35b-4928-814c-876de8e869fb</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
-         <value></value>
+         <value>1</value>
       </iterationEntity>
-      <testDataId>Data Files/OpportunityCreate/IPRecordType</testDataId>
+      <testDataId>Data Files/Sales/OpportunityCreate/IPRecordType</testDataId>
    </testDataLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>Record Type</value>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>db3da02f-8d4b-4fc5-853f-49be4f5e2695</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>4691a927-8a93-4312-8ed3-b232e4bace93</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Parent Ac Name</value>
+      <value>ParentAcName</value>
       <variableId>f6430c33-a95f-4dab-9cb2-4192cc8d6d66</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Child Ac Name</value>
+      <value>ChildAcName</value>
       <variableId>cb543f44-79a6-43d2-8663-bc132659dd64</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value> Probability</value>
+      <value>ExpectedCloseQuarter</value>
+      <variableId>5c19a245-1dbf-4c20-bad3-1a9de8be2ccd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Probability</value>
       <variableId>381a9ce7-c6e6-4430-8a6c-b5267196faec</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>TCV(USD)</value>
-      <variableId>25c9c410-cc3e-4bbe-a7ef-60b0fc9a89bb</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>Term Months</value>
-      <variableId>7adcf54b-b7fd-465a-a9d3-960ade9e16ad</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>Proposed Discount</value>
-      <variableId>082de447-b71b-4f40-8b36-340945d9eea6</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>Region</value>
       <variableId>075a164e-5be7-4d0d-a762-32429a320af2</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Transaction Type</value>
+      <value>TermsCondition</value>
+      <variableId>5647d41b-00df-4745-9b89-32947b99f954</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>TcvUsd</value>
+      <variableId>25c9c410-cc3e-4bbe-a7ef-60b0fc9a89bb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>TermMonths</value>
+      <variableId>7adcf54b-b7fd-465a-a9d3-960ade9e16ad</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ProposedDiscount</value>
+      <variableId>082de447-b71b-4f40-8b36-340945d9eea6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>TransactionType</value>
       <variableId>412ce267-d159-4af3-ac1e-b3fac76422cc</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Deal Review Type</value>
+      <value>DealReviewType</value>
       <variableId>deafa397-c7c8-4347-a692-b06eed144213</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Potential Meur</value>
+      <value>Status</value>
+      <variableId>fda2856c-2869-4f5e-b531-f08fe6bf882c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>PotentialMeur</value>
       <variableId>8c03980a-9a05-46aa-8239-fde9cae7f5c6</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>IPProductCategory</value>
+      <variableId>997ce0cc-743b-48a3-9d52-b09623881532</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>IPTensilicaProductCategory</value>
+      <variableId>0b0806ef-27c5-4c3a-a1f0-2ca36fe16fdf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>Foundry</value>
       <variableId>c5fa2a09-1ece-4796-90b6-f3e5704cb7c6</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>Process</value>
       <variableId>2ed52fc0-f69b-44ff-a872-a78cbf8d61a5</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>01d549f4-2066-4700-bdae-b1ce1359056d</testDataLinkId>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Compelling Event IP</value>
+      <value>Competitor</value>
+      <variableId>dca9766d-08d3-4f82-b874-ff7d3d26900e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>CompellingEventIP</value>
       <variableId>4373ef8c-ba47-4bbb-88ce-d837949d9694</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>34096092-ec5e-49d7-a226-d17185db9104</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>BillingPlan</value>
+      <variableId>3c96e431-e24a-48ce-a90c-8f3060e70b14</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>PaymentTerms</value>
+      <variableId>7277d691-7c0b-483a-90d4-21b6dc8d267c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>CashReceiptInQ0</value>
+      <variableId>27baa2eb-3b9b-43f9-af01-9177b8bbbf18</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>AxName</value>
+      <variableId>60665b75-723a-48c1-9bd6-da08699a8903</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>EndProductSegment</value>
+      <variableId>d4fb5c23-c063-40a2-aaad-9e135117ffad</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>PotentialMEA</value>
+      <variableId>ddedf73c-11a7-447e-9f2a-5ffa0d59dcec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>WonLostReason</value>
+      <variableId>a96bbbd9-3632-400c-b338-2169aabfbe09</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>eff72ec8-a35b-4928-814c-876de8e869fb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>WonOrLoss</value>
+      <variableId>8e2deaea-b6e8-4e1a-96ba-f513de6b727c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Eric Suss'</defaultValue>
+      <description></description>
+      <id>db3da02f-8d4b-4fc5-853f-49be4f5e2695</id>
+      <masked>false</masked>
+      <name>User</name>
+   </variable>
    <variable>
       <defaultValue>'IP'</defaultValue>
       <description></description>
       <id>4691a927-8a93-4312-8ed3-b232e4bace93</id>
       <masked>false</masked>
-      <name>recordType</name>
+      <name>RecordType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>f6430c33-a95f-4dab-9cb2-4192cc8d6d66</id>
       <masked>false</masked>
-      <name>parentAcName</name>
+      <name>ParentAcName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>cb543f44-79a6-43d2-8663-bc132659dd64</id>
       <masked>false</masked>
-      <name>childAcName</name>
+      <name>ChildAcName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5c19a245-1dbf-4c20-bad3-1a9de8be2ccd</id>
+      <masked>false</masked>
+      <name>ECQ</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>381a9ce7-c6e6-4430-8a6c-b5267196faec</id>
       <masked>false</masked>
-      <name>probability</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>25c9c410-cc3e-4bbe-a7ef-60b0fc9a89bb</id>
-      <masked>false</masked>
-      <name>tcvUsd</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>7adcf54b-b7fd-465a-a9d3-960ade9e16ad</id>
-      <masked>false</masked>
-      <name>termMonths</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>082de447-b71b-4f40-8b36-340945d9eea6</id>
-      <masked>false</masked>
-      <name>proposedDiscount</name>
+      <name>Probability</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>075a164e-5be7-4d0d-a762-32429a320af2</id>
       <masked>false</masked>
-      <name>region</name>
+      <name>Region</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5647d41b-00df-4745-9b89-32947b99f954</id>
+      <masked>false</masked>
+      <name>TermsCondition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25c9c410-cc3e-4bbe-a7ef-60b0fc9a89bb</id>
+      <masked>false</masked>
+      <name>TcvUsd</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7adcf54b-b7fd-465a-a9d3-960ade9e16ad</id>
+      <masked>false</masked>
+      <name>TermMonths</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>082de447-b71b-4f40-8b36-340945d9eea6</id>
+      <masked>false</masked>
+      <name>ProposedDiscount</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>412ce267-d159-4af3-ac1e-b3fac76422cc</id>
       <masked>false</masked>
-      <name>transactionType</name>
+      <name>TransactionType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>deafa397-c7c8-4347-a692-b06eed144213</id>
       <masked>false</masked>
-      <name>dealReviewType</name>
+      <name>DealReviewType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fda2856c-2869-4f5e-b531-f08fe6bf882c</id>
+      <masked>false</masked>
+      <name>Status</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>8c03980a-9a05-46aa-8239-fde9cae7f5c6</id>
       <masked>false</masked>
-      <name>potentialMeur</name>
+      <name>PotentialMeur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>997ce0cc-743b-48a3-9d52-b09623881532</id>
+      <masked>false</masked>
+      <name>IPProductCategory</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0b0806ef-27c5-4c3a-a1f0-2ca36fe16fdf</id>
+      <masked>false</masked>
+      <name>IPTensilicaProductCategory</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>c5fa2a09-1ece-4796-90b6-f3e5704cb7c6</id>
       <masked>false</masked>
-      <name>foundry</name>
+      <name>Foundry</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>2ed52fc0-f69b-44ff-a872-a78cbf8d61a5</id>
       <masked>false</masked>
-      <name>process</name>
+      <name>Proces</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dca9766d-08d3-4f82-b874-ff7d3d26900e</id>
+      <masked>false</masked>
+      <name>Competitor</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>4373ef8c-ba47-4bbb-88ce-d837949d9694</id>
       <masked>false</masked>
-      <name>compellingEventIP</name>
+      <name>CompellingEventIP</name>
+   </variable>
+   <variable>
+      <defaultValue>'2023/4/6'</defaultValue>
+      <description></description>
+      <id>34096092-ec5e-49d7-a226-d17185db9104</id>
+      <masked>false</masked>
+      <name>DealStartDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3c96e431-e24a-48ce-a90c-8f3060e70b14</id>
+      <masked>false</masked>
+      <name>BillingPlan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7277d691-7c0b-483a-90d4-21b6dc8d267c</id>
+      <masked>false</masked>
+      <name>PaymentTerms</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>27baa2eb-3b9b-43f9-af01-9177b8bbbf18</id>
+      <masked>false</masked>
+      <name>CashReceiptInQ0</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>60665b75-723a-48c1-9bd6-da08699a8903</id>
+      <masked>false</masked>
+      <name>AxName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d4fb5c23-c063-40a2-aaad-9e135117ffad</id>
+      <masked>false</masked>
+      <name>EndProductSegment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ddedf73c-11a7-447e-9f2a-5ffa0d59dcec</id>
+      <masked>false</masked>
+      <name>PotentialMEA</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a96bbbd9-3632-400c-b338-2169aabfbe09</id>
+      <masked>false</masked>
+      <name>WonLostReason</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8e2deaea-b6e8-4e1a-96ba-f513de6b727c</id>
+      <masked>false</masked>
+      <name>WonOrLoss</name>
    </variable>
 </TestCaseEntity>

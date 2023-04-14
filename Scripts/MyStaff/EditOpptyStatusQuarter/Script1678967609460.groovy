@@ -18,30 +18,30 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/Edit'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/Edit'))
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/ExpectedCloseQuarterLookUp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Sales/Common/IFrames/ExpectedCloseQuarterLookUp'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.switchToWindowIndex(i = (i + 1))
 
-WebUI.setText(findTestObject('OpportunityPage/IFrames/TextInput'), ExpectedCloseQuarter)
+WebUI.setText(findTestObject('Sales/Common/IFrames/TextInput'), ExpectedCloseQuarter)
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/Go'))
+WebUI.click(findTestObject('Sales/Common/IFrames/Go'))
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/ResultSelect'))
+WebUI.click(findTestObject('Sales/Common/IFrames/ResultSelect'))
 
 WebUI.switchToWindowIndex(i = (i - 1))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/OpportunityPage/status'), Status, false)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Opportunity/status'), Status, false)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/TcvUsd'), tcvUsd)
+WebUI.setText(findTestObject('null'), tcvUsd)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/SoftwareTcvUsd'), softwareTCV)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/SoftwareTcvUsd'), softwareTCV)
 
-	WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ServicesTcvUsd'), serviceTCV)
+	WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ServicesTcvUsd'), serviceTCV)
 
 if (recordType == 'IP') {
-    TestObject testObj4 = findTestObject('Object Repository/OpportunityPage/CreateOpportunity/WonLostReason')
+    TestObject testObj4 = findTestObject('Object Repository/Sales/Opportunity/CreateOpportunity/ImpactWonLostReason')
 
     List<WebElement> elementsd = WebUI.findWebElements(testObj4, 10)
 
@@ -51,14 +51,14 @@ if (recordType == 'IP') {
 
     WebUI.delay(2)
 
-    WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddWonLostReasonBtn'))
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddWonLostReasonBtn'))
 
-    WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/LostReasonComment'), comment)
+    WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/LostReasonComment'), comment)
 }
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/Save'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/Save'))
 
-cs = WebUI.getText(findTestObject('OpportunityPage/OpportunityCreditStatus/CreditStatus'))
+cs = WebUI.getText(findTestObject('Sales/Opportunity/OpportunityCreditStatus/CreditStatus'))
 
 WebUI.verifyEqual(cs, creditStatus)
 

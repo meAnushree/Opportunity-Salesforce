@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('OpportunityPage/AccountSelectTab/AccountTab'))
+WebUI.click(findTestObject('Sales/Accounts/AccountSelectTab/AccountTab'))
 
-WebUI.click(findTestObject('OpportunityPage/AccountSelectTab/ClickExixtingAccount', [('Value') : ParentAcName]))
+WebUI.click(findTestObject('Sales/Accounts/AccountSelectTab/ClickExixtingAccount', [('Value') : ParentAcName]))
 
 WebUI.verifyMatch(recRiskRating, risk, false)
 

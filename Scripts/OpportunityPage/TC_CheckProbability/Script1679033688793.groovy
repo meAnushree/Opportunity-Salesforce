@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/DealStartDate'), DealStartDate)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/DealStartDate'), DealStartDate)
 
-TestObject testObj = findTestObject('OpportunityPage/compellingEvent')
+TestObject testObj = findTestObject('Opportunity/compellingEvent')
 
 List<WebElement> elements = WebUI.findWebElements(testObj, 10)
 
@@ -28,9 +28,9 @@ println(elements.size())
 
 elements.get(1).click()
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddCompellingEvent'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddCompellingEvent'))
 
-TestObject testObja = findTestObject('OpportunityPage/CreateOpportunity/RiskIssue')
+TestObject testObja = findTestObject('Sales/Opportunity/CreateOpportunity/RiskIssue')
 
 List<WebElement> elementse = WebUI.findWebElements(testObja, 10)
 
@@ -38,20 +38,20 @@ println(elementse.size())
 
 elementse.get(1).click()
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddRiskIssueBtn'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddRiskIssueBtn'))
 
-WebUI.setText(findTestObject('OpportunityPage/SystemTCV'), SystemTcv)
+WebUI.setText(findTestObject('Opportunity/SystemTCV'), SystemTcv)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ComittedSystemTcv'), comittedSystemTCV)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CommittedSystemTcv'), ComittedSystemTCV)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/CfdTcv'), CfdTcv)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CfdTcv'), CfdTcv)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/CommittedCfdTcv'), committedCfdTcv)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CommittedCfdTcv'), CommittedCfdTcv)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/PotentialMEA'), potentialMea, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/PotentialMEA'), PotentialMea, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/BillingPlan'), billingPlan, false)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/BillingPlan'), BillingPlan, false)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ServiceMargin'), serviceMargin)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ServiceMargin'), ServiceMargin)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/CashReceiptInQ0'), cashReceiptQ0)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CashReceiptInQ0'), CashReceiptQ0)

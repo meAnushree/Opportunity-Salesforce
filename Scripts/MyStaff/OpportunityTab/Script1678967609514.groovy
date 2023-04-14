@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('OpportunityPage/Steps/Opportunities'))
+WebUI.click(findTestObject('Sales/Common/Steps/Opportunities'))
 
-WebUI.click(findTestObject('OpportunityPage/OpportunitySelectTab/ClickOpportunityTab', [('Value') : oppor]))
+WebUI.click(findTestObject('Sales/Opportunity/OpportunitySelectTab/ClickOpportunityTab', [('Value') : oppor]))
 

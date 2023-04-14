@@ -18,97 +18,157 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
+not_run: WebUI.callTestCase(findTestCase('Common/TC_LogIn'), [('url') : 'https://cadence.oktapreview.com/', ('email') : 'internalcossupportadmin@cadence.com'
+        , ('password') : 'Cdns1234', ('environment') : 'SBX'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('OpportunityPage/AccountPageSteps/AllTab'))
+not_run: WebUI.delay(GlobalVariable.shortDelay)
 
-WebUI.click(findTestObject('OpportunityPage/Steps/Opportunities'))
+if (WebUI.verifyElementVisible(findTestObject('Sales/Common/ProfilePageSteps/UserDropdown'), FailureHandling.OPTIONAL )) {
+    'LogIn with `Eric Suss` user'
+    WebUI.callTestCase(findTestCase('OpportunityPage/TC_Impersonation'), [('Search') : 'Eric Suss'], FailureHandling.STOP_ON_FAILURE)
+}
 
-WebUI.click(findTestObject('OpportunityPage/Steps/NewButton'))
+WebUI.delay(GlobalVariable.shortDelay)
 
-'Selecting Record Type Opportunity from Datafile'
-WebUI.click(findTestObject('OpportunityPage/Steps/IPRecordType'))
+'Click on "+" icon'
+WebUI.click(findTestObject('Sales/Accounts/AccountPageSteps/AllTab'))
 
-WebUI.click(findTestObject('OpportunityPage/Steps/ContinueBtn'))
+WebUI.click(findTestObject('Sales/Common/Steps/Opportunities'))
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/ParentAcLookUp'))
+WebUI.click(findTestObject('Sales/Common/Steps/NewButton'))
+
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/RecordType', [('type') : RecordType]))
+
+WebUI.click(findTestObject('Sales/Common/Steps/ContinueBtn'))
+
+WebUI.click(findTestObject('Sales/Common/IFrames/ParentAcLookUp'))
 
 int window = WebUI.getWindowIndex()
 
 WebUI.switchToWindowIndex(window + 1)
 
 'Set text in parent account name field'
-WebUI.setText(findTestObject('OpportunityPage/IFrames/ParentAcName'), parentAcName)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Lookup'), ParentAcName)
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/Go'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/GoButton'))
+
 WebUI.switchToWindowIndex(window + 1)
 
-
-WebUI.click(findTestObject('OpportunityPage/IFrames/ResultSelect'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/LookupResult'))
 
 WebUI.switchToWindowIndex(window)
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/CAccountNameLookup'))
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AccountName'))
 
+//int window = WebUI.getWindowIndex()
+'Switch the window '
 WebUI.switchToWindowIndex(window + 1)
 
-'Set text child account name field'
-WebUI.setText(findTestObject('OpportunityPage/IFrames/ParentAcName'), childAcName)
+'Add text to search a country name in a popup window'
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Lookup'), ChildAcName)
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/Go'))
-WebUI.switchToWindowIndex(window + 1)
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/GoButton'))
 
-WebUI.click(findTestObject('OpportunityPage/IFrames/ResultSelect'))
+'Select a country name from popup window'
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/LookupResult'))
 
 WebUI.switchToWindowIndex(window)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Probability'), probability, false)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ExpectedCloseQuarter'), ECQ)
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/Save'))
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Probability'), Probability, false)
 
-'Common data for two opportunity record type have written from rows 16 to 22'
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/TcvUsd'), tcvUsd)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/Region'), Region, false)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/TermMonths'), termMonths)
+WebUI.selectOptionByValue(findTestObject('Sales/Opportunity/CreateOpportunity/TermsAndCondition'), TermsCondition, false)
 
-WebUI.setText(findTestObject('OpportunityPage/CreateOpportunity/ProposedDiscount'), proposedDiscount)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/TCV(USD)'), TcvUsd)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Region'), region, false)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Term(Month)'), TermMonths)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/TransactionType'), transactionType, false)
+WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ProposedDiscount'), ProposedDiscount)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/DealReviewType'), dealReviewType, false)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/TransactionType'), TransactionType, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/PotentialMeur'), potentialMeur, false)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/DealReviewType'), DealReviewType, false)
 
-'Condition statement is use for Record Type - IP  and print specific datas for it'
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Foundry'), foundry, false)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/Status'), Status, false)
 
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/Process'), process, false)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/PotentialMeur'), PotentialMeur, false)
 
-'IP Product category element use for Record type-IP'
-TestObject testObj1 = findTestObject('Object Repository/OpportunityPage/CreateOpportunity/IPProductCategory')
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/Foundry'), Foundry, false)
 
-List<WebElement> element = WebUI.findWebElements(testObj1, 10)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/Process'), Proces, false)
 
-println(element.size())
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/Competitor'), Competitor, false, FailureHandling.OPTIONAL)
 
-element.get(1).click()
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddCompetitorBtn'))
 
-WebUI.delay(2)
+WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/CompellingEventIP'), CompellingEventIP, false)
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddIPProductBtn'))
+if (TransactionType == 'IP') {
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/IPProductCategory'), IPProductCategory, 
+        false, FailureHandling.OPTIONAL)
 
-'Competitor element use for Record type-IP'
-TestObject testObj2 = findTestObject('Object Repository/OpportunityPage/CreateOpportunity/Competitor')
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddIPProductBtn'))
+}
 
-List<WebElement> elementsb = WebUI.findWebElements(testObj2, 10)
+if (TransactionType == 'IP - Tensilica') {
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/IPTensilicaProductCategory'), IPTensilicaProductCategory, 
+        false, FailureHandling.OPTIONAL)
 
-println(elementsb.size())
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddIPTensilicaProductBtn'))
+}
 
-elementsb.get(1).click()
+Probability = Probability.replaceAll('%', '')
 
-WebUI.click(findTestObject('OpportunityPage/CreateOpportunity/AddCompetitorBtn'))
+Probability = Integer.parseInt(Probability)
 
-'Compelling Event IP is use for Record type - IP'
-WebUI.selectOptionByValue(findTestObject('OpportunityPage/CreateOpportunity/CompellingEventIP'), compellingEventIP, FailureHandling.OPTIONAL)
+if (Probability >= 30) {
+    WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/DealStartDate'), DealStartDate)
+
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/BillingPlan'), BillingPlan, false)
+
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/PaymentTerms'), PaymentTerms, false)
+
+    WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/CashReceiptInQ0'), CashReceiptInQ0)
+
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AxNameLookupBtn'))
+
+    'Switch the window '
+    WebUI.switchToWindowIndex(window + 1)
+
+    WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/Lookup'), AxName)
+
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/GoButton'))
+
+    WebUI.switchToWindowIndex(window + 1)
+
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/LookupResult'))
+
+    WebUI.switchToWindowIndex(window)
+
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/EndProductSegment'), EndProductSegment, 
+        false, FailureHandling.OPTIONAL)
+
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddEndProductSegmentBtn'))
+}
+
+if (Probability >= 50) {
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/PotentialMEA'), PotentialMEA, false)
+}
+
+if (Probability >= 100) {
+    WebUI.setText(findTestObject('Sales/Opportunity/CreateOpportunity/ImpactWonLostReason'), WonLostReason)
+
+    WebUI.selectOptionByLabel(findTestObject('Sales/Opportunity/CreateOpportunity/WonOrLoss'), WonOrLoss, false, FailureHandling.OPTIONAL)
+
+    WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/AddWonOrLossbtn'))
+}
+
+WebUI.click(findTestObject('Sales/Opportunity/CreateOpportunity/Save'))
+
+not_run: OpportunityId = WebUI.getText(findTestObject('Sales/Opportunity/CreateOpportunity/OpportunityID'))
+
+not_run: return OpportunityId
 

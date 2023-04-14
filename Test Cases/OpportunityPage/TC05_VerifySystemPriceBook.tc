@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC126, TC127</description>
+   <name>TC05_VerifySystemPriceBook</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b989d24f-014a-462b-8aed-6b95e950103a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>30066754-b4ae-430b-a457-2699d625e202</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e2e095fe-1a78-485b-89e8-3d56ab1c6547</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6eeccea2-8f44-4c1b-b6d9-b5d449c799e1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>30066754-b4ae-430b-a457-2699d625e202</id>
+      <masked>false</masked>
+      <name>systemHoverText</name>
+   </variable>
+   <variable>
+      <defaultValue>'Review all error messages below to correct your data.'</defaultValue>
+      <description></description>
+      <id>e2e095fe-1a78-485b-89e8-3d56ab1c6547</id>
+      <masked>false</masked>
+      <name>error</name>
+   </variable>
+   <variable>
+      <defaultValue>'//label[text()=\'System Price Book\']'</defaultValue>
+      <description></description>
+      <id>6eeccea2-8f44-4c1b-b6d9-b5d449c799e1</id>
+      <masked>false</masked>
+      <name>systemPrice</name>
+   </variable>
+</TestCaseEntity>

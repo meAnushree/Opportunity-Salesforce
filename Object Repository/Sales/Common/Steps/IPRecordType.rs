@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IPRecordType</name>
+   <tag></tag>
+   <elementGuidId>ae9fa4b6-a14f-4d24-9bab-e4500502dedd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@class='data2Col']/div[@class='requiredInput']/select/</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>${value}</value>
+      <webElementGuid>6d50c602-e84d-483b-b640-0e97039f21c6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

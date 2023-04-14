@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_VerifyField</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4396157-7263-42c8-b951-cedebfa9cc0e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6ca77d2a-1f1c-4c78-b4bd-f4965d2b1cf9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4bfc3a69-6579-492e-932b-f27119aa4a0b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>027abc03-0068-454f-ad27-703ae85ddf0a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject(null)</defaultValue>
+      <description></description>
+      <id>6ca77d2a-1f1c-4c78-b4bd-f4965d2b1cf9</id>
+      <masked>false</masked>
+      <name>testObj</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4bfc3a69-6579-492e-932b-f27119aa4a0b</id>
+      <masked>false</masked>
+      <name>value</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>027abc03-0068-454f-ad27-703ae85ddf0a</id>
+      <masked>false</masked>
+      <name>ErrMsg</name>
+   </variable>
+</TestCaseEntity>

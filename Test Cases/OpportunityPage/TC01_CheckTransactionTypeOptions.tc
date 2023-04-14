@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC114, TC115</description>
+   <name>TC01_CheckTransactionTypeOptions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6d4796ac-45bf-40c2-be82-42ba55d91b80</testCaseGuid>
+   <variable>
+      <defaultValue>'SW &amp; HW &amp; Serv'</defaultValue>
+      <description></description>
+      <id>07fa9b18-07a8-4a7e-9753-36f47b2e64e1</id>
+      <masked>false</masked>
+      <name>recordType</name>
+   </variable>
+</TestCaseEntity>

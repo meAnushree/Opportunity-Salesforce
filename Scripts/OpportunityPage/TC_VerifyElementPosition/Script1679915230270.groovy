@@ -26,19 +26,19 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 
-WebUI.scrollToElement(findTestObject('OpportunityPage/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay)
+WebUI.scrollToElement(findTestObject('Sales/Opportunity/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay)
 
 'Verify that both elements are present on the page'
-WebUI.verifyElementPresent(findTestObject('OpportunityPage/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay, 
+WebUI.verifyElementPresent(findTestObject('Sales/Opportunity/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay, 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('OpportunityPage/EditOpportunityPage/TermsCondition'), GlobalVariable.shortDelay, 
+WebUI.verifyElementPresent(findTestObject('Sales/Opportunity/EditOpportunityPage/TermsCondition'), GlobalVariable.shortDelay, 
     FailureHandling.STOP_ON_FAILURE)
 
 
-BookedDate = WebUiCommonHelper.findWebElement(findTestObject('OpportunityPage/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay)
+BookedDate = WebUiCommonHelper.findWebElement(findTestObject('Sales/Opportunity/EditOpportunityPage/BookedDate'), GlobalVariable.shortDelay)
 
-TermsCon = WebUiCommonHelper.findWebElement(findTestObject('OpportunityPage/EditOpportunityPage/TermsCondition'), GlobalVariable.shortDelay)
+TermsCon = WebUiCommonHelper.findWebElement(findTestObject('Sales/Opportunity/EditOpportunityPage/TermsCondition'), GlobalVariable.shortDelay)
 
 'Get the Y position of each element'
 Point positionOfBookedDate = BookedDate.getLocation()

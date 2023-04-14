@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CheckRequiredFields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>660232ce-9c7e-48be-9ff4-301dff144478</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0c0713d1-6dc4-4b11-8f18-8f674626aa6c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'div[@class=\'requiredInput\']'</defaultValue>
+      <description></description>
+      <id>0c0713d1-6dc4-4b11-8f18-8f674626aa6c</id>
+      <masked>false</masked>
+      <name>value</name>
+   </variable>
+</TestCaseEntity>

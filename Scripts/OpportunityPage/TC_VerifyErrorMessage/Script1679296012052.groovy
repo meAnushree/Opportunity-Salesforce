@@ -31,6 +31,6 @@ errormsg.addProperty('xpath', ConditionType.EQUALS, xpath)
 WebUI.verifyElementVisible(errormsg,FailureHandling.OPTIONAL)
 
 
-//WebUI.verifyElementVisible(findTestObject('OpportunityPage/ErrorMsg', [('msg') : error]))
+//WebUI.verifyElementVisible(findTestObject('Opportunity/ErrorMsg', [('msg') : error]))
 
 

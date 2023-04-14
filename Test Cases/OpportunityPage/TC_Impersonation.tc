@@ -12,10 +12,10 @@
       <variableId>7feb5b78-d54f-46fb-a856-ece6c2d7b1e4</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Puchta, Evelyn'</defaultValue>
+      <defaultValue>'Eric Suss'</defaultValue>
       <description></description>
       <id>7feb5b78-d54f-46fb-a856-ece6c2d7b1e4</id>
       <masked>false</masked>
-      <name>user</name>
+      <name>Search</name>
    </variable>
 </TestCaseEntity>

@@ -18,40 +18,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-not_run: WebUI.setText(findTestObject('OpportunityPage/Impersonation/SearchUser'), '2_2 AX')
+WebUI.setText(findTestObject('Sales/Common/Global/GlobalSearchBox'), Search)
 
-not_run: WebUI.click(findTestObject('OpportunityPage/convertToClassic'))
+WebUI.click(findTestObject('Sales/Common/Global/GlobalSearchBtn'))
 
-'Click on `+` icon from home page'
-WebUI.click(findTestObject('OpportunityPage/Impersonation/AllTab'))
+WebUI.scrollToElement(findTestObject('Sales/Common/Profiles/People'), GlobalVariable.shortDelay)
 
-WebUI.click(findTestObject('OpportunityPage/Impersonation/ChatterTab'))
+WebUI.click(findTestObject('Sales/Common/Profiles/People'))
 
-WebUI.click(findTestObject('OpportunityPage/Impersonation/People'))
+WebUI.waitForElementClickable(findTestObject('Sales/Common/Steps/UserActionMenu'), GlobalVariable.shortDelay)
 
-'Add text in search box in all people page'
-WebUI.setText(findTestObject('OpportunityPage/Impersonation/SearchPeople'), user)
-
-'Create custom xpath'
-String xpath = ((findTestObject('OpportunityPage/Impersonation/SelectPeople').findPropertyValue('xpath') + '//a[text()=\'') + 
-user) + '\']'
-
-println(xpath)
-
-TestObject username = new TestObject('objectName')
-
-username.addProperty('xpath', ConditionType.EQUALS, xpath)
+WebUI.click(findTestObject('Sales/Common/Steps/UserActionMenu'))
 
 WebUI.delay(GlobalVariable.shortDelay)
 
-'Click on user `Evelyn Puchta` from people page'
-WebUI.click(username)
+WebUI.waitForElementClickable(findTestObject('Sales/Common/Steps/UserDetail'), GlobalVariable.shortDelay)
 
-WebUI.delay(GlobalVariable.shortDelay)
+WebUI.click(findTestObject('Sales/Common/Steps/UserDetail'))
 
-WebUI.click(findTestObject('OpportunityPage/Impersonation/UserActionMenu'))
-
-WebUI.click(findTestObject('OpportunityPage/Impersonation/UserDetail'))
-
-WebUI.click(findTestObject('OpportunityPage/Impersonation/LogInUser'))
+'LogIn with the user Eric Suss'
+WebUI.click(findTestObject('Sales/Common/Steps/LogInBtn'))
 
